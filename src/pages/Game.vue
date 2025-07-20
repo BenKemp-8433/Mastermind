@@ -18,6 +18,7 @@ export default {
     const results = inject('results')
     let { gameCode, setGameCode } = inject('gameCode')
     let selection = ref( undefined)
+    let attemptNumber = ref(1)
 
     setGameCode(generateGameCode())
 
@@ -43,14 +44,19 @@ export default {
       })
     }
 
+    function updateAttemptCount() {
+      results.attempts = attemptNumber.value
+    }
+
     provide('selectedPegId', selection)
     provide('gameOver', handleResults)
 
     return {
       gameCode,
       selection: computed(() => selection),
-      attemptNumber: ref(1),
-      settings
+      attemptNumber,
+      settings,
+      updateAttemptCount
     }
   }
 }
@@ -64,6 +70,8 @@ export default {
 
       v-model:attempt-number="attemptNumber"
       :index="index"
+
+      @update:attempt-number="updateAttemptCount()"
     />
   </div>
 

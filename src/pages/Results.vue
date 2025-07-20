@@ -57,6 +57,10 @@ export default {
           :pegId="index"
       />
     </div>
+
+    <p>
+      And was guessed in {{ results.attempts }} attempt(s)
+    </p>
   </div>
 
   <div class="buttons-row">

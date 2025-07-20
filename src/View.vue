@@ -17,7 +17,8 @@ export default {
 
     provide('results', {
       available: false,
-      success: false
+      success: false,
+      attempts: 1,
     })
 
     provide('gameCode', {
