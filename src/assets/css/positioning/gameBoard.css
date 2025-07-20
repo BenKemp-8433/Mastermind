@@ -1,0 +1,28 @@
+.game-board {
+    width: 100%;
+}
+
+.game-board .guess-row {
+    display: grid;
+    grid-template-areas:
+        "receptacles row-result"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.game-board .guess-row .receptacles {
+    --ColumnCount: 4;
+    display: grid;
+    grid-template-columns: repeat(var(--ColumnCount), 1fr);
+
+    grid-column-gap: .5rem;
+    padding: .5rem;
+}
+
+.game-board .guess-row .row-results {
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+    padding: 1.5rem;
+}

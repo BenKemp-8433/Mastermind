@@ -1,0 +1,22 @@
+@import 'preflight.css';
+
+
+/* Fundamentals */
+@import 'colors.css';
+@import 'variables.css';
+
+
+/* Components */
+@import 'positioning/buttons.css';
+
+@import 'positioning/gameBoard.css';
+
+@import 'positioning/inputs.css';
+
+@import 'positioning/pages.css';
+
+@import 'colors/pegs.css';
+@import 'positioning/pegs.css';
+
+@import 'colors/view.css';
+@import 'positioning/view.css';

@@ -1,0 +1,21 @@
+button {
+    padding: .5rem 1.5rem;
+    border-radius: var(--BorderRadiusSmall);
+    cursor: pointer;
+
+    transition: background-color ease-in-out .2s;
+}
+
+button:has(svg) {
+    padding: .5rem;
+}
+
+button svg {
+    width: 24px;
+    aspect-ratio: 1;
+}
+
+.buttons-row {
+    display: flex;
+    column-gap: 3rem;
+}

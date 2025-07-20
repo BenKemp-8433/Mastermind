@@ -1,0 +1,10 @@
+.input-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    padding: .5rem;
+    border-radius: var(--BorderRadiusSmall);
+}

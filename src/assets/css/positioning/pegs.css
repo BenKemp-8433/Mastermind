@@ -1,0 +1,7 @@
+.peg {
+    border-width: var(--BorderWidthDefault);
+    border-style: solid;
+    border-radius: var(--BorderRadiusFull);
+
+    aspect-ratio: 1;
+}

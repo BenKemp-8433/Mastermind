@@ -1,0 +1,26 @@
+.peg {
+    border-color: transparent;
+}
+main.game .peg {
+    border-color: var(--PegBorder);
+}
+main.game .peg.active {
+    border-color: var(--PegActive);
+}
+
+.peg.result-peg.correct {
+    background-color: var(--PegCorrect);
+}
+
+.peg.result-peg.included {
+    background-color: var(--PegIncluded);
+}
+
+.peg.result-peg.incorrect {
+    background-color: var(--PegIncorrect);
+}
+
+.peg.red {background-color: #f00}
+.peg.yellow {background-color: #ff0}
+.peg.green {background-color: #0f0}
+.peg.blue {background-color: #09f}

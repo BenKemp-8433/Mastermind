@@ -1,0 +1,14 @@
+:root {
+    --PageBG: #345;
+
+    --TextLight: #fff;
+    --TextDark: #000;
+
+    --PegCorrect: #000;
+    --PegIncluded: #fff;
+    --PegIncorrect: transparent;
+
+    --PegBorder: #000;
+
+    --PegActive: #dd5;
+}

@@ -1,0 +1,9 @@
+:root {
+    --LogoSize: 120px;
+    --LogoPegsSize: 50px;
+
+    --BorderWidthDefault: 2px;
+
+    --BorderRadiusSmall: 2px;
+    --BorderRadiusFull: 9999px;
+}
