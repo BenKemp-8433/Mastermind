@@ -1,5 +1,5 @@
 <script>
-import { provide, ref } from "vue";
+import { provide, ref } from "vue"
 import { settingsDefaults } from '/src/gameData.js'
 
 export default {

@@ -1,9 +1,9 @@
 <script>
-import { inject } from 'vue';
-import router from '/src/router.js';
+import { inject } from 'vue'
+import router from '/src/router.js'
 
-import Button from '/src/components/ui/Button.vue';
-import Title from '/src/components/ui/Title.vue';
+import Button from '/src/components/ui/Button.vue'
+import Title from '/src/components/ui/Title.vue'
 import Peg from '/src/components/gameElements/Peg.vue'
 
 export default {

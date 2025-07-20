@@ -1,5 +1,5 @@
 <script>
-import { inject, ref } from "vue";
+import { inject, ref } from "vue"
 
 import Input from '/src/components/ui/Input.vue'
 import Peg from '/src/components/gameElements/Peg.vue'

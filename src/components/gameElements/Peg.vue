@@ -1,7 +1,7 @@
 <script>
 import { computed, inject } from 'vue'
 
-import { colors } from "/src/gameData.js";
+import { colors } from "/src/gameData.js"
 
 export default {
   props: {
