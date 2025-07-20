@@ -45,10 +45,12 @@ export default {
 
       if (matches.every(value => value === 2)) {
         gameOver(true)
+        return
       }
 
       if (Number(props.attemptNumber) > Number(settings.guessAttempts)) {
         gameOver()
+        return
       }
 
       return matches.sort().reverse()
