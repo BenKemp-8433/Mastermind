@@ -6,7 +6,7 @@ main.results {
     align-items: center;
     row-gap: 3rem;
 
-    margin-top: 10rem;
+    margin: 10rem 0;
 }
 
 main.home h1,

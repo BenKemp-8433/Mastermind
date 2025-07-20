@@ -10,7 +10,7 @@ export default {
 
   setup(props) {
     const settings = inject('settings')
-    const availableColors = colors.slice(0, settings.colorCount)
+    const availableColors = colors.slice(0, Number(settings.colorCount))
 
     return {
       pegId: computed(() => props.pegId),

@@ -24,8 +24,8 @@ export default {
     function generateGameCode() {
       let code = []
 
-      for(let i = 0; i < settings.codeSize; i++) {
-        code.push(Math.ceil(Math.random() * settings.colorCount))
+      for(let i = 0; i < Number(settings.codeSize); i++) {
+        code.push(Math.ceil(Math.random() * Number(settings.colorCount)))
       }
 
       return code

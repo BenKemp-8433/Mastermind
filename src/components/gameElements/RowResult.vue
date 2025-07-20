@@ -18,14 +18,24 @@ export default {
 
     function match(check, control) {
       let matches = []
-      for(let i = 0; i < check.length; i++) {
+
+      for(let i = 0; i < control.length; i++) {
         if (check[i] === control[i]) {
+          check[i] = 0
+          control[i] = 0
+
           matches.push(2)
+        }
+      }
+
+      for (let i = 0; i < control.length; i++) {
+        if (check[i] === 0) {
           continue
         }
 
-        // TODO: revise this to show correct amount of occurrences
         if (control.includes(check[i])) {
+          control[control.indexOf(check[i])] = 0
+
           matches.push(1)
           continue
         }
