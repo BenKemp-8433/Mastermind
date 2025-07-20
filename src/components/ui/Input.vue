@@ -1,5 +1,5 @@
 <script>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 export default {
   props: {
@@ -16,6 +16,8 @@ export default {
   ],
 
   setup(props, {emit}) {
+    let inputValue = ref(props.modelValue)
+
     function handleUpdate(value) {
       let validated
       switch(props.type) {
@@ -36,12 +38,13 @@ export default {
       }
 
       if (validated) {
+        inputValue.value = value
         emit('update:modelValue', value)
       }
     }
 
     return {
-      value: computed(() => props.modelValue),
+      inputValue,
       handleUpdate
     }
   }
@@ -58,13 +61,13 @@ export default {
       {{ label }}
     </label>
 
-    <!-- TODO: Update value on focusOut -->
     <input
       type="text"
 
-      :value="value"
+      :value="inputValue"
 
       @input="(event) => handleUpdate(event.target.value)"
+      @blur="(event) => event.target.value = inputValue"
     >
   </div>
 </template>
