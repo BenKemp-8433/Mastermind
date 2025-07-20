@@ -24,3 +24,10 @@ herd link Mastermind
 In case you run any other local hosting software, make sure to run the `dist` version of the index.
 
 I've tried to make it work locally without a localhost, running directly off of the `index.html` but due to the Router it would redirect to the root of the system. This project will have to be run on a server, whether locally or otherwise.
+
+## Development
+
+For development purposes (for example when running the Vue-Devtools) create a `.env` file in the root of the project with the following line in it:
+```
+NODE_ENV="development"
+```

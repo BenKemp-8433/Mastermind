@@ -24,6 +24,8 @@ export default {
   <div
     class="peg"
 
-    :style="{'background-color': availableColors[pegId - 1]}"
+    :style="{
+      'background-color': availableColors[pegId - 1]
+    }"
   />
 </template>

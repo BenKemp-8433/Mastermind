@@ -1,5 +1,6 @@
 <script>
 import { provide, ref } from "vue";
+import { settingsDefaults } from '/src/gameData.js'
 
 export default {
   setup() {
@@ -9,9 +10,9 @@ export default {
     }
 
     provide('settings', {
-      codeSize: 4,
-      colorCount: 6,
-      guessAttempts: 10
+      codeSize: settingsDefaults.codeSize,
+      colorCount: settingsDefaults.colorCount,
+      guessAttempts: settingsDefaults.guessAttempts,
     })
 
     provide('results', {

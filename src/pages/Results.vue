@@ -3,11 +3,13 @@ import { inject } from 'vue';
 import router from '/src/router.js';
 
 import Button from '/src/components/ui/Button.vue';
+import Title from '/src/components/ui/Title.vue';
 import Peg from '/src/components/gameElements/Peg.vue'
 
 export default {
   components: {
     'v-button': Button,
+    'v-title': Title,
     'v-peg': Peg,
   },
 
@@ -30,28 +32,17 @@ export default {
 </script>
 
 <template>
-  <h1>
-    <span
-      v-if="results.success"
+  <v-title>
+    <span class="title">
+      <template v-if="results.success">
+        You won!
+      </template>
 
-      class="title"
-    >
-      You won!
+      <template v-else>
+        You lost.
+      </template>
     </span>
-
-    <span
-      v-else
-
-      class="title"
-    >
-      You lost.
-    </span>
-
-    <span class="peg red"></span>
-    <span class="peg yellow"></span>
-    <span class="peg green"></span>
-    <span class="peg blue"></span>
-  </h1>
+  </v-title>
 
   <div class="game-result">
     <p>

@@ -3,11 +3,13 @@ import { inject, ref } from 'vue'
 
 import Button from '/src/components/ui/Button.vue'
 import Input from '/src/components/ui/Input.vue'
+import Title from '/src/components/ui/Title.vue'
 
 export default {
   components: {
     'v-button': Button,
-    'v-input': Input
+    'v-input': Input,
+    'v-title': Title,
   },
 
   setup() {
@@ -23,13 +25,9 @@ export default {
 </script>
 
 <template>
-  <h1>
+  <v-title>
     <span class="title">Mastermind</span>
-    <span class="peg red"></span>
-    <span class="peg yellow"></span>
-    <span class="peg green"></span>
-    <span class="peg blue"></span>
-  </h1>
+  </v-title>
 
   <router-link
     :to="{

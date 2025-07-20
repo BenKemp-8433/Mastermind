@@ -20,3 +20,9 @@ export const colors = [
   '#05a',
   '#55a',
 ]
+
+export const settingsDefaults = {
+  codeSize: 4,
+  colorCount: 6,
+  guessAttempts: 10
+}

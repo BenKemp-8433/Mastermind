@@ -69,16 +69,16 @@ export default {
 
   <div class="color-selection">
     <v-peg
-        v-for="index in Number(settings.colorCount)"
-        :key="index"
+      v-for="index in Number(settings.colorCount)"
+      :key="index"
 
-        :pegId="index"
+      :pegId="index"
 
-        :class="{
+      :class="{
         'active': selection.value === index
       }"
 
-        @click="selection.value = index"
+      @click="selection.value = index"
     />
   </div>
 </template>
